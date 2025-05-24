@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動物展示</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .flower-card {
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+        }
+        .flower-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border: 15px solid #00ffff;
+            box-sizing: border-box;
+        }
+        .flower-name {
+            font-size: 24px;
+            text-align: center;
+            background-color: #00ffff;
+            padding: 15px;
+            margin: 0;
+            margin-bottom: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .flower-name:focus {
+            background-color: white;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flower-card">
+            <div class="flower-name" contenteditable="true">狗</div>
+            <img src="dog.jpg" alt="狗">
+        </div>
+        <div class="flower-card">
+            <div class="flower-name" contenteditable="true">貓</div>
+            <img src="cat.jpg" alt="貓">
+        </div>
+        <div class="flower-card">
+            <div class="flower-name" contenteditable="true">鳥</div>
+            <img src="bired.jpg" alt="鳥">
+        </div>
+    </div>
+</body>
+</html>
