@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>汽車介紹</title>
+  <style>
+    body {
+      font-family: "微軟正黑體", sans-serif;
+      padding: 20px;
+      background-color: #fefefe;
+    }
+    button {
+      margin-right: 10px;
+      padding: 8px 12px;
+      font-size: 16px;
+    }
+    #flower-img {
+      width: 400px;
+      margin-top: 20px;
+    }
+    #flower-info {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>跑車介紹</h1>
+  <button onclick="showFlower('hydrangea')">藍博基尼</button>
+  <button onclick="showFlower('oncidium')">法拉利 </button>
+
+  <div id="flower-content">
+    <img id="flower-img" src="1.jpg" alt="藍博基尼">
+    <div id="flower-info">
+      是義大利的一家兼具設計、工程、製造與銷售於一身的超級跑車製造商
+    </div>
+  </div>
+
+  <script>
+    function showFlower(type) {
+      const img = document.getElementById('flower-img');
+      const info = document.getElementById('flower-info');
+
+      if (type === 'hydrangea') {
+        img.src = '1.jpg';
+        img.alt = '蘭博基尼';
+        info.textContent = '是義大利的一家兼具設計、工程、製造與銷售於一身的超級跑車製造商。';
+      } else if (type === 'oncidium') {
+        img.src = '2.jpg';
+        img.alt = '法拉利';
+        info.textContent = '是一家義大利跑車製造商，主要製造一級方程式賽車及高性能跑車。由恩佐·法拉利於義大利摩德納附近的馬拉內羅創立。';
+      }
+    }
+  </script>
+</body>
+</html>
